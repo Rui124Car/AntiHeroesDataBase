@@ -1,0 +1,22 @@
+/
+// Antiheroes DC - Er model
+//
+CHARACTERS(_ CharId _, Name, Alias, Occupation,ConfirmedKills,Status,Gender)
+
+COMICS(_ Title _, Issue, ReleaseYear)
+
+MOVIES(_ Title _, Director, ReleaseYear)
+
+TEAMS(_ TeamId _, Name)
+
+CHARACTERS === M === < HAS > === N === MOVIES
+
+CHARACTERS === N === < CREATED_IN > --- 1 --- COMICS
+
+CHARACTERS --- M --- < PART_OF > === N === TEAMS
+
+TEAMS --- M --- < ENTERS > --- N --- MOVIES
+
+TEAMS === M === < IS_IN > --- 1 --- COMICS
+
+MOVIES --- 1 --- < INSPIERD_BY > --- 1 --- COMICS

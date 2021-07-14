@@ -1,0 +1,35 @@
+ConfirmedKills, DeadOrAlive, Gender) 
+VALUES
+-- Alguns têm mais que uma equipa, não sei bem como fazer nesses casos
+-- Harley Quinn (TEAMS) - Gotham City Sirens, Suicide Squad, Secret Six, Secret Society of Super Villains
+('Harley Quinn','Harleen Quinzel', 'Psychiatrist', 'The Batman Adventures', 'Suicide Squad','Unknown' 'Alive','F'),
+('Poison Ivy', 'Pamela Isley', 'Botanist','Batman','Batman & Robin','Alive','F'),
+('Penguin', 'Oswald Cobblepot', 'Crimelord', 'Gotham', 'Detective Comics', 'Batman Returns','Alive','M'),
+('Bane', 'Unknown', 'Mercenary', 'Santa Prisca', 'Batman: Vengeance of Bane', 'Batman & Robin','Alive','M'),
+-- Red Hood (TEAMS) - Batman Family, Batman Inc., Teen Titans, League of Assassins, Young Justice, Challengers, The Outlaws
+('Red Hood', 'Jason Todd', 'Unknown', 'The Man Behind the Red Hood!', 'Young Justice', '83', 'Resurrected','M'),
+('HellBlazer', 'Jonh Constantine', 'Occult Detective', 'Swamp Thing', 'Constantine', 'No team', 'Unknown', 'Dead', 'M' ),
+--outras equipas catwoman - arkham-asylum inmates, Batman family, Batman Inc., Birds of pray, Dark arkana, Female Furies, Gotham City Sirens, Suicide Squad, Injustice League, Insurgency, Justice League of America, The network
+--ainda equipas catwoman - Wayne Family, Secret Society of Super Vilans, Outsiders, One-Earth Regime, Mankind Libertation Front, Justice League United, Justice League of Arkham
+('Catwoman', 'Selena Kyle', 'Vigilante', 'Batman', 'Catwoman', 'A.R.G.U.S.', 'Unknown', 'Dead', 'F');
+
+INSERT INTO MOVIES(Title,Director,ReleaseYear)
+VALUES('Suicide Squad', 'David Ayer', 2016),
+('Batman & Robin', 'Joel Schumacher', 1997),
+('Batman Returns', 'Tim Burton', 1992),
+('Son of Batman', 'Ethan Spaulding', 2014),
+('Constantine', 'Francis Lawrence', 2005),
+('Catwoman', 'Jean-Christophe "Pitof" Comar', 2004);
+
+
+--Falta por os creators
+INSERT INTO COMICS(ReleaseYear,Title)
+VALUES(1992, 'The Batman Adventures'),
+(1937, 'Detective Comics'), 
+(1980, 'The New Teen Titans'),
+(1992, 'Batman: Vengeance of Bane'),
+(1940, 'Batman'),
+(1971, 'Swamp Thing');
+
+INSERT INTO TEAMS(Name)
+VALUES('Suicide Squad');
